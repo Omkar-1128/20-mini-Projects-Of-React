@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 
 const RandomColor = () => {
@@ -41,12 +41,17 @@ const RandomColor = () => {
     let g = generateColorColor(256);
     let b = generateColorColor(256);
 
-    setColor(r + "," + g + "," + b)
+    setColor(r + "," + g + "," + b);
   }
 
+  useEffect(() => {
+    // style will be set via state or inline
+  }, [color, colorType]);
+
   const style = {
-    background: colorType === "Hex"? "#" + color : `RGB(${color})`,
+    background: colorType === "Hex" ? "#" + color : `RGB(${color})`,
   };
+
   return (
     <div className="colorBox" style={style}>
       <div
@@ -59,8 +64,22 @@ const RandomColor = () => {
       </div>
 
       <div className="colorButtons">
-        <button onClick={() => setColorType("Hex")}>Hex color</button>
-        <button onClick={() => setColorType("RGB")}>RGB color</button>
+        <button
+          onClick={() => {
+            setColorType("Hex");
+            setColor("000");
+          }}
+        >
+          Hex color
+        </button>
+        <button
+          onClick={() => {
+            setColorType("RGB");
+            setColor("0 , 0 , 0")
+          }}
+        >
+          RGB color
+        </button>
       </div>
       <div className="generateColor">
         <button
