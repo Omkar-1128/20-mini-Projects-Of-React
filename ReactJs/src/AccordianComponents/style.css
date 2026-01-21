@@ -1,0 +1,31 @@
+body {
+    background-color: white;
+}
+
+.Item {
+    border: 1px solid darkmagenta;
+    border-radius: 1rem;
+    width: 800px;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+    background-color:darkmagenta;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.title:hover {
+    cursor: pointer;
+}
+
+.enableBtn {
+    margin-bottom: 10px;
+    color: white;
+    background-color: blue;
+}
