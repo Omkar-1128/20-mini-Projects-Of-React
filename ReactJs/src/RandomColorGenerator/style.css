@@ -1,0 +1,26 @@
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.colorBox {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    justify-content: center;
+    align-items: center; 
+}
+
+.colorButtons button {
+    margin: 10px;
+    padding: 15px 25px;
+}
+
+.generateColor button{
+    margin: 10px;
+    padding: 20px 25px;
+}
