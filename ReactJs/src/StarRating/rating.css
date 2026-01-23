@@ -1,0 +1,33 @@
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+}
+
+.star svg{
+    font-size: 80px;
+}
+
+.rate svg {
+    color: gold;
+}
+
+.btnDiv {
+    margin-top: 50px;
+}
