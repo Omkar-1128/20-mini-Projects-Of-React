@@ -1,0 +1,28 @@
+.TreeItem {
+    display: flex;
+    align-items: center;
+}
+
+.TreeLabel {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.sideBar {
+    width: 22%;
+    height: 100vh;
+    background-color: #064E3B;
+    color: #ECFEFF;
+}
+
+.container2 {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.TreePlusIcon {
+    cursor: pointer;
+}
