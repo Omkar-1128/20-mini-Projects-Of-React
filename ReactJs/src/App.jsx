@@ -5,6 +5,7 @@ import Rating from './StarRating/rating'
 import Slider from './ImageSlider/Slider'
 import LoadData from './LoadMoreData/LoadData'
 import Tree from './TreeView/Tree'
+import QRcode from './QRcodeGenerator/QRcode'
 
 function App() {
   return (
@@ -25,7 +26,10 @@ function App() {
       {/* < LoadData /> */}
 
       {/* 6} Tree View (Recursive Component) */}
-      < Tree />
+      {/* < Tree /> */}
+
+      {/* 7} QR code Generator */}
+      < QRcode />
     </>
   )
 }
