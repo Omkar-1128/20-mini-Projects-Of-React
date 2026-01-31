@@ -1,0 +1,9 @@
+.themeContainerLight {
+    background-color: white;
+    color: black;
+}
+
+.themeContainerDark {
+    background-color: black;
+    color: white;
+}

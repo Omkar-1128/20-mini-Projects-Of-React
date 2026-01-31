@@ -6,6 +6,7 @@ import Slider from './ImageSlider/Slider'
 import LoadData from './LoadMoreData/LoadData'
 import Tree from './TreeView/Tree'
 import QRcode from './QRcodeGenerator/QRcode'
+import Theme from './ChangeTheme/Theme'
 
 function App() {
   return (
@@ -29,7 +30,10 @@ function App() {
       {/* < Tree /> */}
 
       {/* 7} QR code Generator */}
-      < QRcode />
+      {/* < QRcode /> */}
+
+      {/* 8} Change Theme */}
+      < Theme />
     </>
   )
 }
