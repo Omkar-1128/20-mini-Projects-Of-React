@@ -7,6 +7,7 @@ import LoadData from './LoadMoreData/LoadData'
 import Tree from './TreeView/Tree'
 import QRcode from './QRcodeGenerator/QRcode'
 import Theme from './ChangeTheme/Theme'
+import ScrollIndicator from './CustomScrollIndicator/ScrollIndicator'
 
 function App() {
   return (
@@ -33,7 +34,10 @@ function App() {
       {/* < QRcode /> */}
 
       {/* 8} Change Theme */}
-      < Theme />
+      {/* < Theme /> */}
+
+      {/* 9} Custome Scroll Indicator */}
+      < ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/>
     </>
   )
 }

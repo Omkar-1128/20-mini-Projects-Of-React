@@ -21,7 +21,7 @@ function Theme() {
           browser, improving user experience and maintaining UI consistency.
         </p>
       </div>
-      <h3>Current Theme : {value}</h3>
+      <h3>Current Theme : <i>{value}</i></h3>
       <button onClick={handleTheme}>Change Theme</button>
     </div>
   );
