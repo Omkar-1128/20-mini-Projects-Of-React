@@ -1,9 +1,23 @@
-.themeContainerLight {
-    background-color: white;
-    color: black;
+:root {
+    --background: #ffffff;
+    --botton-bg: #000;
+    --text-primary: #000;
+    --botton-text: #ffffff;
 }
 
-.themeContainerDark {
-    background-color: black;
-    color: white;
+[data-theme = 'dark'] {
+    --background: #000;
+    --botton-bg: #ffffff;
+    --text-primary: #ffffff;
+    --botton-text: #000;
+}
+
+.light-dark-mode {
+    color: var(--text-primary);
+    background-color: var(--background);
+}
+
+.light-dark-mode button {
+    background-color: var(--botton-bg);
+    color: var(--botton-text);
 }

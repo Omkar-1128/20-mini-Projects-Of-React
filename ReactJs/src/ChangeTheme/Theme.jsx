@@ -9,9 +9,7 @@ function Theme() {
   }
 
   return (
-    <div
-      className={`container ${value === "light" ? "themeContainerLight" : "themeContainerDark"}`}
-    >
+    <div className="container light-dark-mode" data-theme={value}>
       <div>
         <p>Local Storage Usage</p>
         <p>
