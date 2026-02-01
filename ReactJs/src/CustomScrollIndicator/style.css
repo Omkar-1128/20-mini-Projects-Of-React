@@ -18,6 +18,10 @@
     padding: 15px;
 }
 
+.scrollHeader div {
+    background-color: #FFDAB3;
+}
+
 .ScrollContent {
     margin-top: 80px;
 }

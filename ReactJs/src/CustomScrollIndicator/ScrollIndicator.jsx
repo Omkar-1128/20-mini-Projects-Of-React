@@ -43,7 +43,15 @@ function ScrollIndicator({ url }) {
         <div>
           <div className="scrollHeader">
             <h2>Custom Scroll Indicator</h2>
-            <div style={{width: `${scrollPercent}%` , backgroundColor: "#FFDAB3" , height: "10px"}}></div>
+            <div>
+              <div
+                style={{
+                  width: `${scrollPercent}%`,
+                  backgroundColor: "#492828",
+                  height: "10px",
+                }}
+              ></div>
+            </div>
           </div>
           <div className="ScrollContent">
             {data.map((product) => {
