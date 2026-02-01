@@ -1,0 +1,23 @@
+.scrollContainer {
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #9F8383;
+  color: white;
+}
+
+
+.scrollHeader {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background-color: #574964;
+}
+
+.scrollHeader h2 {
+    margin: 0px;
+    padding: 15px;
+}
+
+.ScrollContent {
+    margin-top: 80px;
+}
