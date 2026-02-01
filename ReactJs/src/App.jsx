@@ -8,6 +8,7 @@ import Tree from './TreeView/Tree'
 import QRcode from './QRcodeGenerator/QRcode'
 import Theme from './ChangeTheme/Theme'
 import ScrollIndicator from './CustomScrollIndicator/ScrollIndicator'
+import TabTest from './CustomTabs/TabTest'
 
 function App() {
   return (
@@ -36,8 +37,11 @@ function App() {
       {/* 8} Change Theme */}
       {/* < Theme /> */}
 
-      {/* 9} Custome Scroll Indicator */}
-      < ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/>
+      {/* 9} Custom Scroll Indicator */}
+      {/* < ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/> */}
+
+      {/* 9} Custom Tabs  */}
+      < TabTest />
     </>
   )
 }

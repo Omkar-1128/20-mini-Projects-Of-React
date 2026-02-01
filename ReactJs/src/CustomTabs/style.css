@@ -1,0 +1,36 @@
+.TabLabel {
+    background-color: #0E8388;
+    min-height: 75px;
+    min-width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #2C3333;
+    border-radius: 5px;
+    margin: 2px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.activeTab {
+    background-color: #CBE4DE;
+}
+
+.tabContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.tabContent {
+    background-color: #2C3333;
+    color: white;
+
+    min-height: 50px;
+    width: auto;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
