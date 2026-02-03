@@ -1,15 +1,16 @@
-import './App.css'
-import Accordian from './AccordianComponents/Accordian'
-import RandomColor from './RandomColorGenerator/RandomColor'
-import Rating from './StarRating/rating'
-import Slider from './ImageSlider/Slider'
-import LoadData from './LoadMoreData/LoadData'
-import Tree from './TreeView/Tree'
-import QRcode from './QRcodeGenerator/QRcode'
-import Theme from './ChangeTheme/Theme'
-import ScrollIndicator from './CustomScrollIndicator/ScrollIndicator'
-import TabTest from './CustomTabs/TabTest'
-
+import "./App.css";
+import Accordian from "./AccordianComponents/Accordian";
+import RandomColor from "./RandomColorGenerator/RandomColor";
+import Rating from "./StarRating/rating";
+import Slider from "./ImageSlider/Slider";
+import LoadData from "./LoadMoreData/LoadData";
+import Tree from "./TreeView/Tree";
+import QRcode from "./QRcodeGenerator/QRcode";
+import Theme from "./ChangeTheme/Theme";
+import ScrollIndicator from "./CustomScrollIndicator/ScrollIndicator";
+import TabTest from "./CustomTabs/TabTest";
+import ModelTest from "./CustomModelPopUp/ModelTest";
+ 
 function App() {
   return (
     <>
@@ -40,10 +41,13 @@ function App() {
       {/* 9} Custom Scroll Indicator */}
       {/* < ScrollIndicator url={"https://dummyjson.com/products?limit=100"}/> */}
 
-      {/* 9} Custom Tabs  */}
-      < TabTest />
+      {/* 10} Custom Tabs  */}
+      {/* < TabTest /> */}
+
+      {/* 11} Custom Model PopUp */}
+      <ModelTest />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
