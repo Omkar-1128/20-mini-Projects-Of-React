@@ -10,6 +10,7 @@ import Theme from "./ChangeTheme/Theme";
 import ScrollIndicator from "./CustomScrollIndicator/ScrollIndicator";
 import TabTest from "./CustomTabs/TabTest";
 import ModelTest from "./CustomModelPopUp/ModelTest";
+import GetProfile from "./GithubProfileFinder/GetProfile";
  
 function App() {
   return (
@@ -45,7 +46,10 @@ function App() {
       {/* < TabTest /> */}
 
       {/* 11} Custom Model PopUp */}
-      <ModelTest />
+      {/* <ModelTest /> */}
+
+      {/* 12} GitHub Profile Finder */}
+      < GetProfile />
     </>
   );
 }

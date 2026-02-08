@@ -1,0 +1,61 @@
+.github-input input {
+    background-color: white;
+    color: black;
+}
+
+.container {
+    background-color: #FED16A;
+}
+
+.userContainer {
+    border: 1px solid #386641;
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    background-color: #386641;
+    overflow-y: auto;
+    border-radius: 1rem;
+    padding: 15px;
+    color: white;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.github-search-btn button{
+    background-color: #F97A00;
+}
+
+.ProfileForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.github-input input {
+    height: 30px;
+    width: 200px;
+}
+
+.userPhoto img {
+    border: 4px solid #212121;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+}
+
+.littleInfo {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.userName {
+    font-size: large;
+    font-weight: 700;
+}
