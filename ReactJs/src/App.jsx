@@ -11,6 +11,7 @@ import ScrollIndicator from "./CustomScrollIndicator/ScrollIndicator";
 import TabTest from "./CustomTabs/TabTest";
 import ModelTest from "./CustomModelPopUp/ModelTest";
 import GetProfile from "./GithubProfileFinder/GetProfile";
+import SearchAutoComplete from "./SearchAutoCompleteUsingAPI/SearchAutoComplete";
  
 function App() {
   return (
@@ -49,7 +50,10 @@ function App() {
       {/* <ModelTest /> */}
 
       {/* 12} GitHub Profile Finder */}
-      < GetProfile />
+      {/* < GetProfile /> */}
+
+      {/* 13} Search AutoComplete Using API */}
+      < SearchAutoComplete />
     </>
   );
 }
