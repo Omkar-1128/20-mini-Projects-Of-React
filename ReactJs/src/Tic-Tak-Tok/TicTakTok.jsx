@@ -12,7 +12,7 @@ function Square({ value, HandleSquareClick }) {
 function TicTakTok() {
   const [isX, setIsX] = useState("X");
   const [values, setValues] = useState(Array(9).fill(""));
-  const [status, setStatus] = useState(`${isX} Starts First`);
+  const [status, setStatus] = useState(`Game started — ${isX} plays first`);
   const [isWinnerFound, setIsWinnerFound] = useState(false);
   const [starter, setStarter] = useState("X");
   const [checkDraw, setCheckDraw] = useState(false);
@@ -34,10 +34,10 @@ function TicTakTok() {
     }
     copyArray[currSquare] = isX;
     if (isX == "X") {
-      setStatus("Next Turn O");
+      setStatus("O's turn");
       setIsX("O");
     } else {
-      setStatus("Next Turn X");
+      setStatus("X's turn");
       setIsX("X");
     }
 
@@ -52,7 +52,7 @@ function TicTakTok() {
         values[winnerStates[i][0]] != ""
       ) {
         setStatus(
-          `${values[winnerStates[i][0]]} Is The Winner, Please Restart The Game`,
+          `🎉 ${values[winnerStates[i][0]]} wins the game!`,
         );
         setIsWinnerFound(true);
       }
@@ -65,7 +65,7 @@ function TicTakTok() {
     setIsWinnerFound(false);
     setValues(Array(9).fill(""));
     setIsX(nextStarter);
-    setStatus(`${nextStarter} Starts First`);
+    setStatus(`Game started — ${nextStarter} plays first`);
     setCheckDraw(false);
   }
 
@@ -74,7 +74,7 @@ function TicTakTok() {
 
     if (isArrayFull && !isWinnerFound) {
       (() => {
-        setStatus("It's a Draw, Please Try Again...");
+        setStatus("It's a draw — play again?");
         setCheckDraw(true);
       })();
     }
