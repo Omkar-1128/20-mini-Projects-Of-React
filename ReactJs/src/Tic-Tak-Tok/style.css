@@ -1,0 +1,33 @@
+.tik-tak-tok-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFDE1;
+}
+
+.gameRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.Square {
+    height: 100px;
+    width: 100px;
+    font-size: xx-large;
+    border: 4px solid #980404;
+    background-color: #FBE580;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2px;
+    margin-bottom: -2px;
+    border-radius: 0px;
+    color: black;
+}
+
+.restartBtn button {
+    margin-top: 50px;
+}

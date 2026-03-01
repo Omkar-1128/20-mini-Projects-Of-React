@@ -12,6 +12,7 @@ import TabTest from "./CustomTabs/TabTest";
 import ModelTest from "./CustomModelPopUp/ModelTest";
 import GetProfile from "./GithubProfileFinder/GetProfile";
 import SearchAutoComplete from "./SearchAutoCompleteUsingAPI/SearchAutoComplete";
+import TicTakTok from "./Tic-Tak-Tok/TicTakTok";
  
 function App() {
   return (
@@ -53,7 +54,10 @@ function App() {
       {/* < GetProfile /> */}
 
       {/* 13} Search AutoComplete Using API */}
-      < SearchAutoComplete />
+      {/* < SearchAutoComplete /> */}
+
+      {/* 14} Tik Tak Tok Game */}
+      < TicTakTok />
     </>
   );
 }
