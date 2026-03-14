@@ -17,6 +17,7 @@ import TestHook from "./UseFetchCustomHook/TestHook";
 import OutsideClickTest from "./UseOutsideClickHook/OutsideClickTest";
 import ResizeHookTest from "./WindowResizeHook/ResizeHookTest";
 import ScrollTopAndBottom from "./ScrollToTopAndBottom/ScrollTopAndBottom";
+import Sections from "./ScrollToPerticularSection/Sections";
  
 function App() {
   return (
@@ -73,7 +74,10 @@ function App() {
       {/* < ResizeHookTest /> */}
 
       {/* 18} Scroll To Top And Bottom Feature  */}
-      < ScrollTopAndBottom />
+      {/* < ScrollTopAndBottom /> */}
+
+      {/* 19} Scroll To Perticular Section  */}
+      < Sections />
     </>
   );
 }
