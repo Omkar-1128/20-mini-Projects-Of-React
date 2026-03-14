@@ -16,6 +16,7 @@ import TicTakTok from "./Tic-Tak-Tok/TicTakTok";
 import TestHook from "./UseFetchCustomHook/TestHook";
 import OutsideClickTest from "./UseOutsideClickHook/OutsideClickTest";
 import ResizeHookTest from "./WindowResizeHook/ResizeHookTest";
+import ScrollTopAndBottom from "./ScrollToTopAndBottom/ScrollTopAndBottom";
  
 function App() {
   return (
@@ -69,7 +70,10 @@ function App() {
       {/* < OutsideClickTest /> */}
 
       {/* 17} Window Resize Hook Test  */}
-      < ResizeHookTest />
+      {/* < ResizeHookTest /> */}
+
+      {/* 18} Scroll To Top And Bottom Feature  */}
+      < ScrollTopAndBottom />
     </>
   );
 }
