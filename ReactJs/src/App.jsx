@@ -13,6 +13,7 @@ import ModelTest from "./CustomModelPopUp/ModelTest";
 import GetProfile from "./GithubProfileFinder/GetProfile";
 import SearchAutoComplete from "./SearchAutoCompleteUsingAPI/SearchAutoComplete";
 import TicTakTok from "./Tic-Tak-Tok/TicTakTok";
+import TestHook from "./UseFetchCustomHook/TestHook";
  
 function App() {
   return (
@@ -57,7 +58,10 @@ function App() {
       {/* < SearchAutoComplete /> */}
 
       {/* 14} Tik Tak Tok Game */}
-      < TicTakTok />
+      {/* < TicTakTok /> */}
+
+      {/* 15} Use Fetch Custom Hook  */}
+      < TestHook />
     </>
   );
 }
