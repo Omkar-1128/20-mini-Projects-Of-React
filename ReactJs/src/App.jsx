@@ -15,6 +15,7 @@ import SearchAutoComplete from "./SearchAutoCompleteUsingAPI/SearchAutoComplete"
 import TicTakTok from "./Tic-Tak-Tok/TicTakTok";
 import TestHook from "./UseFetchCustomHook/TestHook";
 import OutsideClickTest from "./UseOutsideClickHook/OutsideClickTest";
+import ResizeHookTest from "./WindowResizeHook/ResizeHookTest";
  
 function App() {
   return (
@@ -65,7 +66,10 @@ function App() {
       {/* < TestHook /> */}
 
       {/* 16} Outside Click Hook Test  */}
-      < OutsideClickTest />
+      {/* < OutsideClickTest /> */}
+
+      {/* 17} Window Resize Hook Test  */}
+      < ResizeHookTest />
     </>
   );
 }
