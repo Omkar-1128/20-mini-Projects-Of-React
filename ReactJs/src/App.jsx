@@ -14,6 +14,7 @@ import GetProfile from "./GithubProfileFinder/GetProfile";
 import SearchAutoComplete from "./SearchAutoCompleteUsingAPI/SearchAutoComplete";
 import TicTakTok from "./Tic-Tak-Tok/TicTakTok";
 import TestHook from "./UseFetchCustomHook/TestHook";
+import OutsideClickTest from "./UseOutsideClickHook/OutsideClickTest";
  
 function App() {
   return (
@@ -61,7 +62,10 @@ function App() {
       {/* < TicTakTok /> */}
 
       {/* 15} Use Fetch Custom Hook  */}
-      < TestHook />
+      {/* < TestHook /> */}
+
+      {/* 16} Outside Click Hook Test  */}
+      < OutsideClickTest />
     </>
   );
 }
