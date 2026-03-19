@@ -1,0 +1,48 @@
+.Weather-Container {
+    border: 4px solid darkgoldenrod;
+    border-radius: 1rem;
+    height: 500px;
+    width: 750px;
+    padding: 50px;
+}
+
+.cityName {
+    font-size: xx-large;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.date {
+    font-size: large;
+    font-weight: 500;
+    margin: 0;
+}
+
+.temp {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.cloud {
+    font-size:x-large;
+    /* font-weight: 700; */
+    margin: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.property {
+    font-size: larger;
+    font-weight: 800;
+    margin: 0px;
+}
+
+.values {
+    font-size: larger;
+    font-weight: 600;
+}

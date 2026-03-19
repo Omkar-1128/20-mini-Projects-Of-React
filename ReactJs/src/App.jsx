@@ -18,6 +18,7 @@ import OutsideClickTest from "./UseOutsideClickHook/OutsideClickTest";
 import ResizeHookTest from "./WindowResizeHook/ResizeHookTest";
 import ScrollTopAndBottom from "./ScrollToTopAndBottom/ScrollTopAndBottom";
 import Sections from "./ScrollToPerticularSection/Sections";
+import WeatherApp from "./WeatherApp/WeatherApp";
  
 function App() {
   return (
@@ -77,7 +78,10 @@ function App() {
       {/* < ScrollTopAndBottom /> */}
 
       {/* 19} Scroll To Perticular Section  */}
-      < Sections />
+      {/* < Sections /> */}
+
+      {/* 20} Weather App  */}
+      < WeatherApp />
     </>
   );
 }
