@@ -6,6 +6,7 @@ function Weather() {
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
 
   const formattedDate = new Date().toLocaleDateString("en-US", {
     weekday: "long",
@@ -16,7 +17,11 @@ function Weather() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    console.log(query);
+    // console.log(query);
+
+    if(query.length == 0) {
+      return;
+    }
 
     try {
       setLoading(true);
@@ -25,10 +30,11 @@ function Weather() {
       );
       let jsonRes = await res.json();
       setData(jsonRes);
-      console.log(jsonRes);
+      // console.log(jsonRes);
       setLoading(false);
     } catch (e) {
       setLoading(false);
+      setError(error);
       console.log("Error Occured:- " + e);
     }
   }
@@ -47,38 +53,42 @@ function Weather() {
               setQuery={setQuery}
               handleSubmit={handleSubmit}
             />
-            {data && (
-              <div className="Weather-Content">
-                <p className="cityName">{data && data.name}</p>
-                <p className="date">{formattedDate}</p>
-                <h1 className="temp">
-                  {data && data.main && (data.main.temp - 273.15).toFixed(2)}{" "}
-                  &deg;C
-                </h1>
-                <p className="cloud">
-                  {data && data.weather[0] && data.weather[0].description}
-                </p>
-                <div className="row">
-                  <div className="col">
-                    <div className="values">
-                      {data && data.wind && data.wind.speed}
+            {data && data.cod == 404 ? (
+              <div className="ErrorController"> Data Not Found </div>
+            ) : (
+              data && (
+                <div className="Weather-Content">
+                  <p className="cityName">{data && data.name}</p>
+                  <p className="date">{formattedDate}</p>
+                  <h1 className="temp">
+                    {data && data.main && (data.main.temp - 273.15).toFixed(2)}{" "}
+                    &deg;C
+                  </h1>
+                  <p className="cloud">
+                    {data && data.weather[0] && data.weather[0].description}
+                  </p>
+                  <div className="row">
+                    <div className="col">
+                      <div className="values">
+                        {data && data.wind && data.wind.speed}
+                      </div>
+                      <div className="property">Wind Speed</div>
                     </div>
-                    <div className="property">Wind Speed</div>
-                  </div>
-                  <div className="col">
-                    <div className="values">
-                      {data && data.main && data.main.humidity}
+                    <div className="col">
+                      <div className="values">
+                        {data && data.main && data.main.humidity}
+                      </div>
+                      <div className="property">Humidity</div>
                     </div>
-                    <div className="property">Humidity</div>
-                  </div>
-                  <div className="col">
-                    <div className="values">
-                      {data && data.main && data.main.pressure}
+                    <div className="col">
+                      <div className="values">
+                        {data && data.main && data.main.pressure}
+                      </div>
+                      <div className="property">Pressure</div>
                     </div>
-                    <div className="property">Pressure</div>
                   </div>
                 </div>
-              </div>
+              )
             )}
           </div>
         )}

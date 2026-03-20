@@ -46,3 +46,10 @@
     font-size: larger;
     font-weight: 600;
 }
+
+.ErrorController {
+    font-size: xx-large;
+    color: red;
+    font-weight: 600;
+    margin-top: 300px;
+}
